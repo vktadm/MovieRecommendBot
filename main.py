@@ -16,12 +16,12 @@ logger = logging.getLogger(__name__)
 async def main():
     # Конфигурируем логирование
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.DEBUG,
         format='%(filename)s:%(lineno)d #%(levelname)-8s '
                '[%(asctime)s] - %(name)s - %(message)s')
 
     # Выводим в консоль информацию о начале запуска бота
-    logger.info('Starting bot')
+    logger.info('Запуск бота')
     # Загружаем конфиг в переменную config
     config: Config = load_config()
 

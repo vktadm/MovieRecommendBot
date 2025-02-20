@@ -26,4 +26,8 @@ ANSWERS_DB: dict[int, dict[int, str]] = {
     }
 }
 
-USER_DB: list = []
+POLL_CHOICE = {
+    'answers': []
+}
+
+USER_DB: dict = {}
